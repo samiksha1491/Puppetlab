@@ -2,7 +2,7 @@ class package_installation{
   $pkgname = [ 'screen' , 'strace' , 'sudo' ]
 
 package { $pkgname:
-  ensure => present,
+  ensure => absent,
      }
 }
 include package_installation
